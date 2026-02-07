@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Skills - Qurban Ali Sadaqat</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Inter',sans-serif}
+body{background:#0f172a;color:#e2e8f0;line-height:1.6;min-height:100vh;overflow-x:hidden;transition:background 0.4s ease,color 0.4s ease}
+body.light{background:#f1f5f9;color:#000}
+body.light h2{color:#2563eb}
+.container{position:relative;z-index:1;max-width:850px;width:90%;margin:60px auto;background:#1e293b;padding:50px;border-radius:20px;box-shadow:0 20px 60px rgba(0,0,0,0.6);border:1px solid rgba(255,255,255,0.05);animation:fadeIn 1s ease;transition:transform 0.3s ease}
+.container:hover{transform:translateY(-5px)}
+header{display:flex;justify-content:space-between;align-items:center;margin-bottom:40px}
+header h1{font-size:2.5rem;color:#f8fafc;letter-spacing:1px}
+header nav a{color:#38bdf8;text-decoration:none;margin:0 10px}
+section{margin-bottom:35px;opacity:0;transform:translateY(30px);transition:all 0.8s ease}
+section.visible{opacity:1;transform:translateY(0)}
+h2{font-size:1.3rem;margin-bottom:15px;padding-bottom:8px;border-bottom:1px solid #334155;color:#38bdf8;text-transform:uppercase;letter-spacing:1px}
+ul{margin-top:8px;margin-left:20px}
+footer{text-align:center;margin-top:40px;font-size:0.85rem;color:#64748b}
+.toggle-btn{position:fixed;top:20px;right:20px;background:#0ea5e9;color:white;border:none;padding:8px 14px;border-radius:20px;cursor:pointer;z-index:1000}
+@keyframes fadeIn{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
+@media(max-width:600px){.container{padding:25px}}
+</style>
+</head>
+<body>
+<button class="toggle-btn" onclick="document.body.classList.toggle('light')">Toggle Mode</button>
+<div class="container">
+<header>
+<h1>Detailed Skills</h1>
+<nav>
+<a href="index.html">CV</a>
+<a href="certificates.html">Certificates</a>
+</nav>
+</header>
+<section>
+<h2>Frontend</h2>
+<ul>
+<li>HTML / CSS / JavaScript (Expert)</li>
+<li>React.js (Advanced)</li>
+<li>Vue.js (Intermediate)</li>
+</ul>
+</section>
+<section>
+<h2>Backend</h2>
+<ul>
+<li>Node.js / Express</li>
+<li>Python / Django</li>
+<li>Database Management: MySQL, MongoDB</li>
+</ul>
+</section>
+<section>
+<h2>Other Skills</h2>
+<ul>
+<li>Git / GitHub / Version Control</li>
+<li>Agile / Scrum / Project Management</li>
+<li>Problem Solving & Algorithms</li>
+</ul>
+</section>
+<footer>© 2026 Qurban Ali Sadaqat</footer>
+</div>
+<script>
+const sections=document.querySelectorAll('section');
+const observer=new IntersectionObserver(entries=>{entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');}});},{threshold:0.1});
+sections.forEach(section=>observer.observe(section));
+</script>
+</body>
+</html>

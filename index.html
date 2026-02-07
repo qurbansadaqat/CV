@@ -1,155 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Qurban Ali Sadaqat - CV</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Inter', sans-serif;
-        }
-
-        body {
-            background: linear-gradient(135deg, #667eea, #764ba2);
-            color: #333;
-            line-height: 1.6;
-        }
-
-        .container {
-            max-width: 900px;
-            margin: 40px auto;
-            background: white;
-            border-radius: 16px;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
-            padding: 40px;
-        }
-
-        header {
-            text-align: center;
-            margin-bottom: 40px;
-        }
-
-        header h1 {
-            font-size: 2.5rem;
-            color: #2d3748;
-        }
-
-        header p {
-            color: #667;
-            margin-top: 8px;
-        }
-
-        section {
-            margin-bottom: 30px;
-        }
-
-        h2 {
-            font-size: 1.4rem;
-            margin-bottom: 15px;
-            padding-bottom: 5px;
-            border-bottom: 2px solid #667eea;
-            display: inline-block;
-        }
-
-        .job {
-            margin-bottom: 15px;
-        }
-
-        .job h3 {
-            font-size: 1.1rem;
-            color: #444;
-        }
-
-        .job span {
-            font-size: 0.9rem;
-            color: #777;
-        }
-
-        ul {
-            margin-top: 8px;
-            margin-left: 20px;
-        }
-
-        .skills span {
-            display: inline-block;
-            background: #667eea;
-            color: white;
-            padding: 6px 12px;
-            border-radius: 20px;
-            margin: 5px 5px 0 0;
-            font-size: 0.85rem;
-        }
-
-        footer {
-            text-align: center;
-            margin-top: 30px;
-            font-size: 0.9rem;
-            color: #888;
-        }
-
-        @media (max-width: 600px) {
-            .container {
-                padding: 20px;
-            }
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Qurban Ali Sadaqat - CV</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
+<button class="toggle-btn" onclick="document.body.classList.toggle('light')">Toggle Mode</button>
 
-    <div class="container">
-        <header>
-            <h1>Qurban Ali Sadaqat</h1>
-            <p>Email: qurban.sadaqat@gmail.com | Phone: +49 152 168 860 93</p>
-            <p>Location: Schmiedhof 1, 76777 Neupotz</p>
-        </header>
+<div class="container">
+<header>
+<div>
+<h1>Qurban Ali Sadaqat</h1>
+<p style="font-weight: bold;">IT-/Netzwerkingenieur | Netzwerkadministrator | IT-Support</p>
+<p>E-Mail: qurban.sadaqat@gmail.com | Telefon: +49 152 168 860 93</p>
+<p>Standort: Germany</p>
+<nav style="margin-top:10px;">
+<a href="skills.html">Qualifikationsdetails</a>
+<a href="certificates.html">Zertifikate</a>
+<a href="mailto:qurban.sadaqat@gmail.com">E-Mail senden</a>
+<a href="https://wa.me/+4915216886093">Nachricht an uns </a>
+</nav>
+</div>
+<img src="images/profile.jpg" alt="Profile Photo" style="width:140px;height:140px;border-radius:50%;border:4px solid #38bdf8;box-shadow:0 10px 30px rgba(0,0,0,0.6);object-fit:cover;">
+</header>
 
-        <section>
-            <h2>Kurzprofil</h2>
-            <p>
-Erfahrener <strong>IT</strong> und <strong>Netzwerkingenieur</strong>  mit über 10 Jahren Berufserfahrung in den Bereichen Netzwerkadministration, IT-Support, IT-Infrastruktur und Cybersicherheit. Fundierte Kenntnisse in Cisco-Netzwerken, Microsoft-Technologien, Cloud-Computing (Microsoft Azure) sowie im Betrieb und der Wartung komplexer IT-Systeme. Analytisch, lösungsorientiert und teamfähig. Aktuell in Deutschland ansässig und offen für Positionen als Network Engineer, Network Administrator oder IT-Support. 
+<section>
+<h2>Kurzprofil</h2>
+<p style="text-align: justify;"> Erfahrener <strong>IT</strong> - und <strong>Netzwerkingenieur</strong> mit über 10 Jahren Berufserfahrung in den Bereichen <strong>Netzwerkadministration, IT-Support und IT-Infrastruktur </strong>. Fundierte Kenntnisse in Cisco-Netzwerken, Microsoft-Technologien, Cloud-Computing sowie im Betrieb und der Wartung komplexer IT-Systeme. Analytisch, lösungsorientiert und teamfähig. Aktuell in Deutschland ansässig und offen für Positionen als <strong>Network Engineer, Network Administrator oder IT-Support</strong>. </p>
+</section>
 
-        </section>
 
-        <section>
-            <h2>Work Experience</h2>
-            <div class="job">
-                <h3>Job Title - Company Name</h3>
-                <span>2022 - Present</span>
-                <ul>
-                    <li>Describe your main responsibility</li>
-                    <li>Describe your achievement</li>
-                    <li>Describe another contribution</li>
-                </ul>
-            </div>
-        </section>
+<section>
+<h2>Berufserfahrung</h2>
 
-        <section>
-            <h2>Education</h2>
-            <div class="job">
-                <h3>Degree Name - University Name</h3>
-                <span>2018 - 2022</span>
-            </div>
-        </section>
+<!-- 1 -->
+<div class="job">
+  <h3>Netzwerk Ingenieur – Afghan Wireless Communication Company (AWCC)</h3>
+  <span>August 2023 – April 2024</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span><a href="https://afghan-wireless.com/about-us/" style="color:#007bff; font-style: italic;">Lesen Sie mehr über AWCC</a></span>
 
-        <section>
-            <h2>Skills</h2>
-            <div class="skills">
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>JavaScript</span>
-                <span>Git</span>
-                <span>German (A2)</span>
-            </div>
-        </section>
+  <ul class="job-list">
+    <li>Entwurf, Implementierung und Wartung von lokalen Netzwerken (LAN) und Weitverkehrsnetzen (WAN).</li>
+    <li class="extra">Router, Switches, Firewalls, Access Points und andere Netzwerkgeräte konfigurieren und installieren.</li>
+    <li class="extra">Regelmäßige Überwachung der Netzwerkleistung mithilfe der SolarWinds-Tools.</li>
+    <li class="extra">Systemaktualisierungen und Patches durchführen.</li>
+    <li class="extra">Netzwerkprobleme diagnostizieren und beheben.</li>
+    <li class="extra">Technische Unterstützung für interne Teams und Endbenutzer bereitstellen.</li>
+    <li class="extra">Dokumentation von Netzwerkkonfigurationen und Verfahren erstellen.</li>
+    <li class="extra">Berichte über Netzwerkleistung und Sicherheit erstellen.</li>
+    <li class="extra">Zusammenarbeit mit anderen IT-Fachleuten.</li>
+    <li class="extra">Neue Netzwerktechnologien evaluieren und Verbesserungen vorschlagen.</li>
+  </ul>
 
-        <footer>
-            © 2026 Your Name
-        </footer>
-    </div>
+  <button class="read-btn" onclick="toggleRead(this)">Mehr lesen</button>
+</div>
+
+
+<!-- 2 -->
+<div class="job">
+  <h3>Leiter der IT-Abteilung – Afghan National Association for Adult Education (ANAFAE)</h3>
+  <span>November 2018 – Dezember 2021</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span><a href="https://anafae.af/about" style="color:#007bff; font-style: italic;">Lesen Sie mehr über ANAFAE</a></span>
+
+  <ul class="job-list">
+    <li>Leitung, Beaufsichtigung und Überwachung des IT-Abteilungsbetriebs.</li>
+    <li class="extra">Enge Zusammenarbeit mit dem Bildungsmanager.</li>
+    <li class="extra">Durchführung von Interviews, Fokusgruppen und Umfragen.</li>
+    <li class="extra">Verwaltung des LAN- und WAN-Rechenzentrums.</li>
+    <li class="extra">Analyse und Lösung von IT-Problemen.</li>
+    <li class="extra">Bandbreitenmanagement, URL-Filterung und Zugriffskontrolle mit Open-Source-Firewalls.</li>
+    <li class="extra">Installation und Konfiguration von DHCP-, Datei-, FTP-, Druck- und Webservern.</li>
+    <li class="extra">Entwurf und Implementierung drahtloser Netzwerke.</li>
+    <li class="extra">Fehlerbehebung bei Hardware und Software.</li>
+  </ul>
+
+  <button class="read-btn" onclick="toggleRead(this)">Mehr lesen</button>
+</div>
+
+
+<!-- 3 -->
+<div class="job">
+  <h3>IT-Koordinator – Yasna Development Support Organization (YDSO)</h3>
+  <span>August 2017 – August 2018</span>
+
+  <ul class="job-list">
+    <li>Verantwortlich für den täglichen IT-Betrieb und die zuverlässige Funktion aller Systeme.</li>
+    <li class="extra">Technischer Support und Fehlerdiagnose.</li>
+    <li class="extra">Installation und Wartung von Arbeitsstationen und Geräten.</li>
+    <li class="extra">Benutzerkontenverwaltung und Zugriffsberechtigungen.</li>
+    <li class="extra">Systemüberwachung zur Minimierung von Ausfallzeiten.</li>
+    <li class="extra">Dokumentation der IT-Prozesse und Supportaktivitäten.</li>
+  </ul>
+
+  <button class="read-btn" onclick="toggleRead(this)">Mehr lesen</button>
+</div>
+
+
+<!-- 4 -->
+<div class="job">
+  <h3>Regionaler IT-Manager – Educational Support Organization (ESO)</h3>
+  <span>September 2013 – Mai 2017</span>
+
+  <ul class="job-list">
+    <li>Regelmäßige Überprüfung der Netzwerkleistung.</li>
+    <li class="extra">Identifizierung von Verbesserungsmöglichkeiten für Systeme und Software.</li>
+    <li class="extra">Entwicklung und Implementierung von IT-Richtlinien.</li>
+    <li class="extra">Entwicklung von Schulungsprogrammen und Workshops.</li>
+    <li class="extra">Durchführung regelmäßiger Systemprüfungen.</li>
+    <li class="extra">Erstellung von Betriebssystemberichten.</li>
+    <li class="extra">Überwachung größerer IT-Projekte.</li>
+    <li class="extra">Verwaltung des IT-Budgets.</li>
+    <li class="extra">Anleitung und Entwicklung des IT-Teams.</li>
+  </ul>
+
+  <button class="read-btn" onclick="toggleRead(this)">Mehr lesen</button>
+</div>
+
+
+<!-- 5 -->
+<div class="job">
+  <h3>IT-Hardwaretechniker – Jahaan Technology Corporation (JTC)</h3>
+
+  <ul class="job-list">
+    <li>Fehlerbehebung und Reparatur von Hardware und Software.</li>
+    <li class="extra">Installation drahtloser Antennen und Digitalkameras.</li>
+    <li class="extra">Tägliche Berichtserstellung an den Baustellenleiter.</li>
+    <li class="extra">Erstellung technischer Tickets im OTRS-System.</li>
+  </ul>
+
+  <button class="read-btn" onclick="toggleRead(this)">Mehr lesen</button>
+</div>
+
+</section>
+
+
+
+
+<section>
+<h2>Ausbildung</h2>
+<div class="job">
+<h3>Bachelor of Science (B.Sc.) in Informatik -Kabul Education University</h3>
+<span>2009 - 2012</span>
+</div>
+</section>
+
+<section>
+    <h2>Sprachkenntnisse</h2>
+    <ul class="language-list">
+        <li>
+            <strong>Deutsch:</strong> B1 – Improving daily communication and professional vocabulary
+        </li>
+        <li>
+            <strong>Englisch:</strong> Fließend
+        </li>
+        <li>
+            <strong>Dari / Persian:</strong> Muttersprache
+        </li>
+        <li>
+            <strong>Pashto:</strong> Fließend
+        </li>
+    </ul>
+</section>
+
+<section>
+<h2>Fähigkeiten</h2>
+<div class="skills">
+<span>HTML</span>
+<span>CSS</span>
+<span>JavaScript</span>
+<span>Git</span>
+</div>
+</section>
+
+<footer>© 2026 Qurban Ali Sadaqat</footer>
+</div>
+
+<script>
+const sections=document.querySelectorAll('section');
+const observer=new IntersectionObserver(entries=>{entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');}});},{threshold:0.1});
+sections.forEach(section=>observer.observe(section));
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const lists = document.querySelectorAll(".job-list");
+  lists.forEach(list => {
+    list.classList.add("collapsed");
+  });
+});
+
+function toggleRead(button) {
+  const job = button.parentElement;
+  const list = job.querySelector(".job-list");
+
+  if (list.classList.contains("collapsed")) {
+    list.classList.remove("collapsed");
+    list.classList.add("expanded");
+    button.textContent = "Weniger lesen";
+  } else {
+    list.classList.remove("expanded");
+    list.classList.add("collapsed");
+    button.textContent = "Mehr lesen";
+  }
+}
+</script>
 
 </body>
 </html>

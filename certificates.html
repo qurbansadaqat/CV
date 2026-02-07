@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Certificates - Qurban Ali Sadaqat</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<button class="toggle-btn" onclick="document.body.classList.toggle('light')">Toggle Mode</button>
+
+<div class="container">
+<header>
+<h1>Certificates</h1>
+<nav>
+<a href="index.html">CV</a>
+<a href="skills.html">Skills</a>
+</nav>
+</header>
+
+<section class="certificates">
+<img src="images/certificate1.jpg" alt="Certificate 1">
+<img src="images/certificate2.jpg" alt="Certificate 2">
+<!-- Use logos or cropped images to hide sensitive info -->
+</section>
+
+<footer>© 2026 Qurban Ali Sadaqat</footer>
+</div>
+
+<script>
+const sections=document.querySelectorAll('section');
+const observer=new IntersectionObserver(entries=>{entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');}});},{threshold:0.1});
+sections.forEach(section=>observer.observe(section));
+</script>
+</body>
+</html>
